@@ -1,0 +1,166 @@
+2020-03-20 13:49:03,230 - train - INFO - WaterMeterModel(
+  (fcn): FCN(
+    (block1): Sequential(
+      (0): Conv2d(3, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (1): ReLU(inplace=True)
+    )
+    (block2): Sequential(
+      (0): ResidualBlockA(
+        (conv1): Conv2d(16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn1): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv2): Conv2d(16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+      (1): ResidualBlockA(
+        (conv1): Conv2d(16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn1): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv2): Conv2d(16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+      (2): ResidualBlockA(
+        (conv1): Conv2d(16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn1): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv2): Conv2d(16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+      (3): ResidualBlockB(
+        (conv1_1): Conv2d(16, 24, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn1_1): BatchNorm2d(24, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv1_2): Conv2d(24, 24, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+        (bn1_2): BatchNorm2d(24, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv2): Conv2d(16, 24, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(24, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (block3): Sequential(
+      (0): ResidualBlockA(
+        (conv1): Conv2d(24, 24, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn1): BatchNorm2d(24, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv2): Conv2d(24, 24, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(24, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+      (1): ResidualBlockA(
+        (conv1): Conv2d(24, 24, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn1): BatchNorm2d(24, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv2): Conv2d(24, 24, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(24, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+      (2): ResidualBlockA(
+        (conv1): Conv2d(24, 24, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn1): BatchNorm2d(24, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv2): Conv2d(24, 24, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(24, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+      (3): ResidualBlockB(
+        (conv1_1): Conv2d(24, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn1_1): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv1_2): Conv2d(32, 32, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+        (bn1_2): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv2): Conv2d(24, 32, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (block4): Sequential(
+      (0): ResidualBlockA(
+        (conv1): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn1): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv2): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+      (1): ResidualBlockA(
+        (conv1): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn1): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv2): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+      (2): ResidualBlockA(
+        (conv1): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn1): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv2): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+      (3): ResidualBlockB(
+        (conv1_1): Conv2d(32, 48, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn1_1): BatchNorm2d(48, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv1_2): Conv2d(48, 48, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+        (bn1_2): BatchNorm2d(48, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv2): Conv2d(32, 48, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(48, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (block5): ResidualBlockA(
+      (conv1): Conv2d(48, 48, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(48, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(48, 48, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(48, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+  )
+  (tsm): TSMLayer(
+    (conv2d): Conv2d(48, 21, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (bn): BatchNorm2d(21, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (bnH): AvgPool2d(kernel_size=(6, 1), stride=(6, 1), padding=0)
+  )
+)
+Trainable parameters: 236463
+2020-03-20 13:56:14,348 - trainer - INFO -     epoch          : 1
+2020-03-20 13:56:14,348 - trainer - INFO -     loss           : 4.283474188380771
+2020-03-20 13:56:14,348 - trainer - INFO -     accuracy       : 0.04472222222222222
+2020-03-20 13:56:14,349 - trainer - INFO -     val_loss       : 3.3014371395111084
+2020-03-20 13:56:14,349 - trainer - INFO -     val_accuracy   : 0.0425
+2020-03-20 13:56:14,376 - trainer - INFO - Saving checkpoint: C:\Users\10138\Documents\yottacloud\code\water-meter\saved\models\WMN_FCSRN\0320_134903\checkpoint-epoch1.pth ...
+2020-03-20 13:56:14,407 - trainer - INFO - Saving current best: model_best.pth ...
+2020-03-20 14:03:38,500 - trainer - INFO -     epoch          : 2
+2020-03-20 14:03:38,500 - trainer - INFO -     loss           : 1.6177354945076836
+2020-03-20 14:03:38,501 - trainer - INFO -     accuracy       : 0.18194444444444444
+2020-03-20 14:03:38,501 - trainer - INFO -     val_loss       : 1.16720290184021
+2020-03-20 14:03:38,501 - trainer - INFO -     val_accuracy   : 0.205
+2020-03-20 14:03:38,537 - trainer - INFO - Saving checkpoint: C:\Users\10138\Documents\yottacloud\code\water-meter\saved\models\WMN_FCSRN\0320_134903\checkpoint-epoch2.pth ...
+2020-03-20 14:03:38,565 - trainer - INFO - Saving current best: model_best.pth ...
+2020-03-20 14:11:22,926 - trainer - INFO -     epoch          : 3
+2020-03-20 14:11:22,927 - trainer - INFO -     loss           : 0.8352595927980211
+2020-03-20 14:11:22,927 - trainer - INFO -     accuracy       : 0.2275
+2020-03-20 14:11:22,927 - trainer - INFO -     val_loss       : 0.5487400031089783
+2020-03-20 14:11:22,927 - trainer - INFO -     val_accuracy   : 0.225
+2020-03-20 14:11:22,956 - trainer - INFO - Saving checkpoint: C:\Users\10138\Documents\yottacloud\code\water-meter\saved\models\WMN_FCSRN\0320_134903\checkpoint-epoch3.pth ...
+2020-03-20 14:11:22,997 - trainer - INFO - Saving current best: model_best.pth ...
+2020-03-20 14:19:45,385 - trainer - INFO -     epoch          : 4
+2020-03-20 14:19:45,385 - trainer - INFO -     loss           : 0.44581009269588523
+2020-03-20 14:19:45,386 - trainer - INFO -     accuracy       : 0.24
+2020-03-20 14:19:45,386 - trainer - INFO -     val_loss       : 0.6187396550178528
+2020-03-20 14:19:45,386 - trainer - INFO -     val_accuracy   : 0.2225
+2020-03-20 14:19:45,418 - trainer - INFO - Saving checkpoint: C:\Users\10138\Documents\yottacloud\code\water-meter\saved\models\WMN_FCSRN\0320_134903\checkpoint-epoch4.pth ...
+2020-03-20 14:27:25,675 - trainer - INFO -     epoch          : 5
+2020-03-20 14:27:25,675 - trainer - INFO -     loss           : 0.15097211258278953
+2020-03-20 14:27:25,675 - trainer - INFO -     accuracy       : 0.24944444444444444
+2020-03-20 14:27:25,675 - trainer - INFO -     val_loss       : 0.05072380881756544
+2020-03-20 14:27:25,675 - trainer - INFO -     val_accuracy   : 0.2875
+2020-03-20 14:27:25,702 - trainer - INFO - Saving checkpoint: C:\Users\10138\Documents\yottacloud\code\water-meter\saved\models\WMN_FCSRN\0320_134903\checkpoint-epoch5.pth ...
+2020-03-20 14:27:25,734 - trainer - INFO - Saving current best: model_best.pth ...
+2020-03-20 14:35:10,985 - trainer - INFO -     epoch          : 6
+2020-03-20 14:35:10,985 - trainer - INFO -     loss           : -0.052301802212993305
+2020-03-20 14:35:10,985 - trainer - INFO -     accuracy       : 0.2563888888888889
+2020-03-20 14:35:10,985 - trainer - INFO -     val_loss       : -0.14859601013362408
+2020-03-20 14:35:10,985 - trainer - INFO -     val_accuracy   : 0.2775
+2020-03-20 14:35:11,016 - trainer - INFO - Saving checkpoint: C:\Users\10138\Documents\yottacloud\code\water-meter\saved\models\WMN_FCSRN\0320_134903\checkpoint-epoch6.pth ...
+2020-03-20 14:35:11,050 - trainer - INFO - Saving current best: model_best.pth ...
+2020-03-20 14:42:52,094 - trainer - INFO -     epoch          : 7
+2020-03-20 14:42:52,094 - trainer - INFO -     loss           : -0.20650560669600965
+2020-03-20 14:42:52,095 - trainer - INFO -     accuracy       : 0.26
+2020-03-20 14:42:52,095 - trainer - INFO -     val_loss       : -0.22078527003526688
+2020-03-20 14:42:52,095 - trainer - INFO -     val_accuracy   : 0.28
+2020-03-20 14:42:52,126 - trainer - INFO - Saving checkpoint: C:\Users\10138\Documents\yottacloud\code\water-meter\saved\models\WMN_FCSRN\0320_134903\checkpoint-epoch7.pth ...
+2020-03-20 14:42:52,167 - trainer - INFO - Saving current best: model_best.pth ...
+2020-03-20 14:50:50,162 - trainer - INFO -     epoch          : 8
+2020-03-20 14:50:50,162 - trainer - INFO -     loss           : -0.3422731937799189
+2020-03-20 14:50:50,162 - trainer - INFO -     accuracy       : 0.2638888888888889
+2020-03-20 14:50:50,162 - trainer - INFO -     val_loss       : -0.3008052488043904
+2020-03-20 14:50:50,163 - trainer - INFO -     val_accuracy   : 0.2825
+2020-03-20 14:50:50,198 - trainer - INFO - Saving checkpoint: C:\Users\10138\Documents\yottacloud\code\water-meter\saved\models\WMN_FCSRN\0320_134903\checkpoint-epoch8.pth ...
+2020-03-20 14:50:50,239 - trainer - INFO - Saving current best: model_best.pth ...
+2020-03-20 14:59:35,692 - trainer - INFO -     epoch          : 9
+2020-03-20 14:59:35,693 - trainer - INFO -     loss           : -0.41994077396061685
+2020-03-20 14:59:35,693 - trainer - INFO -     accuracy       : 0.2627777777777778
+2020-03-20 14:59:35,694 - trainer - INFO -     val_loss       : -0.38708826959133147
+2020-03-20 14:59:35,694 - trainer - INFO -     val_accuracy   : 0.2625
+2020-03-20 14:59:35,744 - trainer - INFO - Saving checkpoint: C:\Users\10138\Documents\yottacloud\code\water-meter\saved\models\WMN_FCSRN\0320_134903\checkpoint-epoch9.pth ...
+2020-03-20 14:59:35,948 - trainer - INFO - Saving current best: model_best.pth ...
