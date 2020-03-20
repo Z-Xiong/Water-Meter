@@ -49,6 +49,8 @@ def feature_to_y(x):
     x = F.softmax(x, dim=1) # 把特征序列转换为概率
     x, index = torch.max(x, dim=1) # 选出概率最大的那个
     index = torch.squeeze(index) # 压缩index维度
+    if torch.cuda.is_available():
+        index = index.cpu()
     index = index.numpy().tolist() # 把index转换为list，方便遍历
 
     b = []
