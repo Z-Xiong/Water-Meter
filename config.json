@@ -10,7 +10,7 @@
         "type": "WaterMeterDataLoader",
         "args":{
             "data_dir": "C:/Users/10138/Documents/yottacloud/code/water-meter/data/",
-            "batch_size": 16,
+            "batch_size": 32,
             "shuffle": true,
             "validation_split": 0.1,
             "num_workers": 0
@@ -45,6 +45,6 @@
         "monitor": "min val_loss",
         "early_stop": 10,
 
-        "tensorboard": false
+        "tensorboard": true
     }
 }

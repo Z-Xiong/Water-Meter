@@ -21,24 +21,22 @@ C = {0: 0,
      17: 17,
      18: 18,
      19: 19,
-     20: 21}
+     20: 'b'}
 # 定义函数delet_char, 去重序列，并删除空白字符b
 def get_preTarget(a):
-    O=[]
-    print(a)
     for i in range(len(a)):
-        o = list(set(a[i]))
-        o.sort(key=a[i].index)
-        if 'b' in o:
-            o.remove(21)
-        O.append(o)
-    
-    return O
+        for j in range(len(a[i]) - 1, 0, -1):
+            if a[i][j] == a[i][j - 1]:
+                del a[i][j]
+        while 'b' in a[i]:
+            a[i].remove('b')
+    return a
+
 
 # 将得到的预测序列转换为实际读数
 def middle_char(y):
     for i in range(len(y)):
-        if y[i]>9 and y[i]!=21:
+        if y[i]>9 and y[i]!='b':
             if i==len(y):
                 y[i]=y[i]-9.5
             else:
